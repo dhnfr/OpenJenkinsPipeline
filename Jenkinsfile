@@ -16,6 +16,7 @@ pipeline {
                 expression {
                      params.executeTest == true
                 }
+            }
             steps {
                 echo 'Testing..'
             }
