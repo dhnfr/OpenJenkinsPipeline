@@ -27,4 +27,9 @@ pipeline {
             }
         }
     }
+    post {
+        success {
+            slackSend color: "good", message: "Message from Jenkins Pipeline"
+        }
+    }
 }
