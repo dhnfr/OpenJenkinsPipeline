@@ -2,7 +2,7 @@ pipeline {
     agent any
     parameters {
         choice(name: 'BRANCH_NAME', choices: ['stable', 'dev', 'release'], description: '')
-        booleanParam(name: 'executeTest', devaultValue: true, description: '')
+        booleanParam(name: 'executeTest', defaultValue: true, description: '')
     }
     stages {
         stage('Build') {
